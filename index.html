@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daniel Wilhelm Thune</title>
+    <meta name="description" content="Daniel Wilhelm Thune — content creator. Motivation, lifestyle, creator education, and China journey." />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/hero.jpg" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-dot"></span>
+          <span>Daniel</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#content">Content</a>
+          <a href="#photos">Photos</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="pill">Content Creator</p>
+            <h1>
+              Build a life you’re proud of.
+              <span class="muted">One post at a time.</span>
+            </h1>
+            <p class="lead">
+              I’m Daniel Wilhelm Thune. I create clean, educational short‑form content about motivation, self‑improvement,
+              lifestyle, and my journey toward China.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary" href="#contact">Work with me</a>
+              <a class="btn" href="#content">See what I post</a>
+            </div>
+            <p class="micro">Based in Sweden but dreaming moving to China · Creating in English + 中文</p>
+          </div>
+
+          <div class="hero-card" aria-label="Portrait">
+            <img src="assets/hero.jpg" alt="Daniel smiling in a light outfit" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <div class="grid-2">
+            <p>
+              I’m building a personal brand that blends Scandinavian simplicity with modern creator education. My content is
+              practical, calm, and focused on real progress — even when it feels difficult.
+            </p>
+            <p>
+              My long‑term goal is to grow in China, collaborate with brands, and create content around culture, fashion, and
+              lifestyle — while helping other creators build better systems.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="content" class="section alt">
+        <div class="container">
+          <h2>What I post</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Educational</h3>
+              <p>Simple content frameworks, hooks, and clarity — so people understand your message fast.</p>
+            </article>
+            <article class="card">
+              <h3>Motivation</h3>
+              <p>Soft reminders about discipline, confidence, and staying consistent when it’s not easy.</p>
+            </article>
+            <article class="card">
+              <h3>Lifestyle</h3>
+              <p>Minimal, clean aesthetics — daily life, routines, and the process behind building a better version of me.</p>
+            </article>
+            <article class="card">
+              <h3>China journey</h3>
+              <p>Language, culture, mindset, and what I’m learning as I move toward my dream life in China.</p>
+            </article>
+          </div>
+
+          <div class="platforms">
+            <a class="chip" href="https://www.tiktok.com/@danielwthune" target="_blank" rel="noopener">TikTok</a>
+            <span class="chip ghost">Douyin</span>
+            <span class="chip ghost">Rednote / 小红书</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="photos" class="section">
+        <div class="container">
+          <h2>Photos</h2>
+          <p class="sub">
+            A simple, clean look — lots of space, strong typography, and easy to read.
+          </p>
+          <div class="photo-grid">
+            <figure class="photo">
+              <img src="assets/photo2.jpg" alt="Daniel sitting and smiling" />
+            </figure>
+            <figure class="photo">
+              <img src="assets/photo1.jpg" alt="Daniel standing in a dark outfit" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container">
+          <h2>Contact</h2>
+          <div class="grid-2">
+            <p>
+              For collaborations, brand work, UGC, fashion, or content projects — email me and include a short description of
+              what you need.
+            </p>
+            <div class="contact-box">
+              <a class="contact-item" href="mailto:daniel.thudde@outlook.com">
+                <span class="label">Email</span>
+                <span class="value">daniel.thudde@outlook.com</span>
+              </a>
+              <div class="contact-item">
+                <span class="label">TikTok</span>
+                <span class="value">@danielwthune</span>
+              </div>
+              <div class="contact-item">
+                <span class="label">Languages</span>
+                <span class="value">English · Svenska · 中文</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Daniel Wilhelm Thune</span>
+        <span class="muted">Clean. Simple. Readable.</span>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
