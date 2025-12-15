@@ -22,6 +22,11 @@ body{
 
 a{color:inherit;text-decoration:none;}
 
+/* Gör bilder responsiva och undvik förvrängning */
+img{max-width:100%;height:auto;display:block;object-fit:cover;}
+/* Hjälparklass för bilder som ska visas helt (ingen beskärning) */
+.img-contain{object-fit:contain;background:var(--bg-alt);}
+
 .container{max-width:var(--max);margin:0 auto;padding:0 20px;}
 
 /* Top nav (Apple-ish) */
@@ -118,8 +123,15 @@ h1{
   border:1px solid var(--line);
   box-shadow:var(--shadow);
   overflow:hidden;
+  /* Säkerställ konsekvent bildhöjd/ beskärning */
+  aspect-ratio:16/9;
 }
-.hero-card img{width:100%;height:auto;display:block;}
+.hero-card img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+}
 
 /* Sections */
 .section{padding:64px 0;}
@@ -180,8 +192,15 @@ h2{
   overflow:hidden;
   border:1px solid var(--line);
   background:#fff;
+  /* Sätt en proportion för fotoblocken så de beskärs konsekvent */
+  aspect-ratio:4/3;
 }
-.photo img{width:100%;height:auto;display:block;}
+.photo img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+}
 
 /* Contact */
 .contact-box{
@@ -221,3 +240,4 @@ h2{
   .cards{grid-template-columns:1fr;}
   .photo-grid{grid-template-columns:1fr;}
 }
+
