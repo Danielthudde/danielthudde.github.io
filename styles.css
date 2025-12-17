@@ -124,7 +124,7 @@ h1{
   box-shadow:var(--shadow);
   overflow:hidden;
   /* Säkerställ konsekvent bildhöjd/ beskärning */
-  aspect-ratio:16/9;
+  aspect-ratio:4/5;
 }
 .hero-card img{
   width:100%;
