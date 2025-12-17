@@ -194,7 +194,7 @@ h2{
   border:1px solid var(--line);
   background:#fff;
   /* Sätt en proportion för fotoblocken så de beskärs konsekvent */
-  aspect-ratio:4/3;
+  aspect-ratio:3/4;
 }
 .photo img{
   width:100%;
